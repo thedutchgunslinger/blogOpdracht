@@ -12,14 +12,7 @@
 <body>
 
     <?php
-    include('db_functions.php');
-    $id = $_GET['id'];
 
-    startConnection();
-    $query = "SELECT * FROM bericht WHERE id = '$id'";
-    $result = executeQuery($query);
-
-    while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
         echo '
         <div class="container">
         <h1>Edit Post</h1>
@@ -32,7 +25,7 @@
     </form>
     </div>
         ';
-    }
+    
     ?>
 </body>
 
