@@ -17,7 +17,7 @@
     // Starten van een DB connectie
     startConnection();
     // Uitvoeren van een query
-    $result = executeQuery("SELECT * FROM bericht");
+    $result = executeQuery("SELECT * FROM bericht ORDER BY id DESC");
     // Loop door alle rijen heen
     while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
         // Print de rij
